@@ -13,7 +13,7 @@ let but2 = document.querySelector(`.but2`);
 
 function myClick() {
     // console.log("myClick");
-    if (a.value.toLowerCase() == `Лермонтов`) {
+    if (a.value.toLowerCase() == `лермонтов`) {
         but.classList.remove(`btn-outline`)
         but.classList.remove(`btn-danger`)
         but.classList.add(`btn-success`)
@@ -27,7 +27,7 @@ function myClick() {
     }
 }
 function my1Click() {
-    if (b.value.toLowerCase() == `Грибоедов`) {
+    if (b.value.toLowerCase() == `грибоедов`) {
         // console.log("my1Click");
         but1.classList.remove(`btn-outline`)
         but1.classList.remove(`btn-danger`)
@@ -43,7 +43,7 @@ function my1Click() {
 }
 function my2Click() {
     // console.log("my2Click");
-    if (c.value.toLowerCase() == `Толстой`) {
+    if (c.value.toLowerCase() == `толстой`) {
         but2.classList.remove(`btn-outline`)
         but2.classList.remove(`btn-danger`)
         but2.classList.add(`btn-success`)
