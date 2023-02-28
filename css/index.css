@@ -1,0 +1,234 @@
+body {
+  position: relative;
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1.4;
+  color: #000;
+  min-width: 320px;
+  overflow-x: hidden;
+  height: auto;
+  margin: 0;
+}
+
+.parallax {
+  background: url("../assets/1665724833_3-11.jpg");
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.Nodeparallax {
+  background: url("../assets/pngtree-technology-background-technological-sense-science-fiction-modern-image_15121.jpg");
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.parallax2 {
+  background: url("../assets/red-cyber-circuit-future-technology-concept-background_42077-4795.avif");
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.parallax3 {
+  background: url("../assets/1957d609bdba509.jpg");
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+.centerq {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar {
+  width: 100%;
+  height: 70px;
+  box-shadow: 0 4px 10px rgba((0), 0, 0, a.1);
+}
+
+.navbar .container {
+  height: inherit;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-menu {
+  list-style-type: none;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+.navbar-menu li {
+  display: inline-block;
+}
+
+.navbar-menu li a {
+  display: inline-block;
+  color: #000;
+  opacity: 0.6;
+  text-decoration: none;
+  padding: 10px;
+  transition: all .07s ease-in-out;
+}
+
+.navbar-menu li a:hover {
+  opacity: 1;
+}
+
+.navbar-wrap {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.callback {
+  margin-left: 30px;
+  padding: 10px 30px;
+  background-color: coral;
+  border-radius: 100px;
+  color: #fff;
+  text-decoration: none;
+  box-shadow: 0 4px 6px rgba(255, 127, 80, .2);
+  transition: all .1s ease-in-out;
+}
+
+.callback:hover {
+  transform: scale(1.04);
+  color: #fff;
+  box-shadow: 0 9px 9px rgba(6, 247, 38, 0.5);
+}
+
+.navbar-brand {
+  background-color: coral;
+  padding: 3px;
+  font-weight: 700;
+  font-size: 30px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #000;
+  transition: all .07s ease-in-out;
+}
+
+.navbar-brand:hover {
+  transform: scale(1.04);
+  color: #fff;
+  box-shadow: 0 9px 9px rgba(6, 247, 38, 0.5);
+}
+
+.mrgn {
+  margin: 20px;
+}
+
+header {
+  position: sticky;
+  margin-bottom: 5px;
+  top: 0;
+  z-index: 1;
+  background-color: rgb(0, 0, 0);
+  opacity: 0.9;
+}
+
+.sd {
+  border-radius: 5%;
+  opacity: 0.9;
+  padding: 25px;
+  background-color: rgb(79, 182, 230);
+}
+
+.tex {
+  text-align: center;
+}
+
+.is {
+  margin: auto;
+  padding: auto;
+}
+
+.da {
+  padding: 10px;
+}
+
+.wrapper {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.col-quest2 {
+  min-width: 200px;
+  background-color: aliceblue;
+  align-items: center;
+  justify-content: flex-end;
+  display: flex;
+}
+
+.img-quest1 {
+  max-width: 800px;
+  width: 90%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.img-kross {
+  /* max-width: 800px; */
+  width: 90%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 500px) {
+  .col-auto {
+    display: flex;
+    width: 100% !important;
+    padding-left: 0;
+    text-align: left;
+    align-items: flex-start;
+  }
+
+  .col-quest2 {
+    width: 100% !important;
+  }
+
+  .col-auto div {
+    text-align: left !important;
+  }
+
+
+  .col-quest2 {
+    min-width: 200px;
+    background-color: rgb(179, 210, 236);
+    align-items: center;
+    justify-content: flex-start;
+    display: flex;
+  }
+
+  .navbar {
+    min-height: 150px;
+  }
+
+  .a_1,
+  .a_2,
+  .a_3,
+  .a_4,
+  .a_5,
+  .a-6,
+  .a-7 {
+    max-width: 152px;
+  }
+}
