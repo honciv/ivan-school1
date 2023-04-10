@@ -11,7 +11,7 @@ body {
 }
 
 .parallax {
-  background: url("../assets/1665724833_3-11.jpg");
+  background: url("../assets/1625643267_9-phonoteka-org-p-drevo-art-krasivo-9.jpg");
   height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
@@ -20,7 +20,7 @@ body {
 }
 
 .Nodeparallax {
-  background: url("../assets/pngtree-technology-background-technological-sense-science-fiction-modern-image_15121.jpg");
+  background: url("../assets/fotosessija_skazochnyj_les_7.jpg");
   height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
@@ -29,7 +29,7 @@ body {
 }
 
 .parallax2 {
-  background: url("../assets/red-cyber-circuit-future-technology-concept-background_42077-4795.avif");
+  background: url("../assets/1647944688_1-gamerwall-pro-p-skazochnii-les-fon-krasivie-1.jpg");
   height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
@@ -149,7 +149,7 @@ header {
   border-radius: 5%;
   opacity: 0.9;
   padding: 25px;
-  background-color: rgb(79, 182, 230);
+  background-color: #269926;
 }
 
 .tex {
