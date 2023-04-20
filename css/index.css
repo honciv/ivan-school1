@@ -1,6 +1,6 @@
 body {
   position: relative;
-  font-family: 'Noto Sans', sans-serif;
+  font-family: "Noto Sans", sans-serif;
   font-size: 16px;
   line-height: 1.4;
   color: #000;
@@ -86,7 +86,7 @@ body {
   opacity: 0.6;
   text-decoration: none;
   padding: 10px;
-  transition: all .07s ease-in-out;
+  transition: all 0.07s ease-in-out;
 }
 
 .navbar-menu li a:hover {
@@ -105,8 +105,8 @@ body {
   border-radius: 100px;
   color: #fff;
   text-decoration: none;
-  box-shadow: 0 4px 6px rgba(255, 127, 80, .2);
-  transition: all .1s ease-in-out;
+  box-shadow: 0 4px 6px rgba(255, 127, 80, 0.2);
+  transition: all 0.1s ease-in-out;
 }
 
 .callback:hover {
@@ -123,7 +123,7 @@ body {
   border-radius: 10px;
   text-decoration: none;
   color: #000;
-  transition: all .07s ease-in-out;
+  transition: all 0.07s ease-in-out;
 }
 
 .navbar-brand:hover {
@@ -209,7 +209,6 @@ header {
     text-align: left !important;
   }
 
-
   .col-quest2 {
     min-width: 200px;
     background-color: rgb(179, 210, 236);
@@ -237,7 +236,7 @@ header {
   margin: 1% 20% 10% 15%;
 }
 
-.mkl2{
+.mkl2 {
   margin-right: 5%;
 }
 
@@ -252,49 +251,54 @@ header {
   border-radius: 40%;
   color: rgb(217, 255, 2);
 }
-.helr{
+.helr {
   border-radius: 50%;
 }
-.white_color{
+.white_color {
   max-width: 80%;
   margin-left: 10%;
 }
-.ui{
+.ui {
   color: #269926;
 }
-.maxim_width_img{
+.maxim_width_img {
   min-height: 100px;
   min-width: 100px;
   text-align: center;
   text-decoration: none;
   color: #000;
 }
-.poi{
+.poi {
   margin-left: 300px;
 }
-.surcle{
+.surcle {
   background-color: rgb(228, 34, 0);
   border-radius: 100%;
 }
-.mbwe{
+.mbwe {
   margin-top: 4%;
 }
-.iopw{
+.iopw {
   max-width: 400px;
   min-height: 150px;
-  margin-left: 37%;
+  /* margin-left: 37%; */
   color: gold;
   text-align: center;
   padding-top: 3%;
+  width: 90%;
+  /* display: flex; */
+  /* align-items: center; */
+  display: block;
+  margin: 0 auto;
 }
-.trwa{
+.trwa {
   font-family: italic;
 }
-.surcle1{
+.surcle1 {
   border-radius: 5%;
-  background-color: rgb(6, 112, 23)
+  background-color: rgb(6, 112, 23);
 }
-.clep{
+.clep {
   min-height: 300px;
   min-width: 300px;
   text-align: center;
@@ -302,4 +306,21 @@ header {
   color: #000;
   background-color: #148514;
   margin: 5px;
+}
+
+main {
+  position: relative;
+}
+
+.canvas-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+#myCanvas {
+  position: absolute;
+}
+
+.canvasOff {
+  display: none;
 }
