@@ -1,220 +1,264 @@
 <!DOCTYPE html>
 <html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/index.css?v=3" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="icon"
+      href="assets/free-icon-golden-apple-1455014.png"
+      type="image/jpg"
+    />
+    <script src="./js/index2.js" defer></script>
+    <title>Задание 2</title>
+  </head>
 
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="./css/index.css">
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
-		integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-	<link rel="icon" href="assets/free-icon-golden-apple-1455014.png"
-		type="image/jpg">
-	<script src="./js/index2.js" defer></script>
-	<title>Задание 2</title>
-</head>
-
-<body class="parallax">
+  <body class="parallax">
     <header>
-        <nav class="navbar">
-            <div class="container">
-                <a href="index.html" class="navbar-brand">Войти</a>
-                <div class="navbar-wrap">
-                    <ul class="navbar-menu">
-                        <li><a href="second.html" class="callback">Литературное древо</a></li>
-                    </ul>
-                    <a href="qest_3.html" class="callback">Следующее задание</a>
-                    <div class="knop" id="timeSec"></div>
-                </div>
-            </div>
-        </nav>
+      <nav class="navbar">
+        <div class="container">
+          <a href="index.html" class="navbar-brand">Войти</a>
+          <div class="navbar-wrap">
+            <ul class="navbar-menu">
+              <li>
+                <a href="second.html" class="callback">Литературное древо</a>
+              </li>
+            </ul>
+            <a href="qest_3.html" class="callback">Следующее задание</a>
+            <div class="knop" id="timeSec"></div>
+          </div>
+        </div>
+      </nav>
     </header>
-	<main>
-		<div class="card white_color">
-			<div class="card-body">
-				<h5 class="card-title tex">Задание 2</h5>
-				<p class="card-text tex ui">Соотнесите название произведения с его автором.<br>Максимальный балл –
-					7xp. (1xp – за одно правильное соотнесение).
-				</p>
-			</div>
-		</div>
+    <main>
+      <div class="card white_color">
+        <div class="card-body">
+          <h5 class="card-title tex">Задание 2</h5>
+          <p class="card-text tex ui">
+            Соотнесите название произведения с его автором.<br />Максимальный
+            балл – 7xp. (1xp – за одно правильное соотнесение).
+          </p>
+        </div>
+      </div>
 
-		<div class="wrapper">
-			<div class="center m-4">
-				<form class="row g-3">
-					<div class="col-auto col-quest2">
-						<div class="question-label2 text-end rounded">Капитанская дочка</div>
-					</div>
-					<div class="col-auto">
-						<select class="form-select bg-primary text-white" aria-label="Default select example" id="answer1">
-							<option selected>Выберите ответ</option>
-							<option value="1">А.Дюма</option>
-							<option value="2">И.С.Тургенев</option>
-							<option value="3">М.А.Булгаков</option>
-							<option value="4">М.Ю.Лермонтов</option>
-							<option value="5">А.С.Пушкин</option>
-							<option value="6">Л.Н.Толстой</option>
-							<option value="7">Н.В.Гоголь</option>
-						</select>
-					</div>
-					<div class="col-auto">
-						<button class="btn btn-outline" id="btnQ1" type="button"></button>
-					</div>
-				</form>
-			</div>
+      <div class="wrapper">
+        <div class="center m-4">
+          <form class="row g-3">
+            <div class="col-auto col-quest2">
+              <div class="question-label2 text-end rounded">
+                Капитанская дочка
+              </div>
+            </div>
+            <div class="col-auto">
+              <select
+                class="form-select bg-primary text-white"
+                aria-label="Default select example"
+                id="answer1"
+              >
+                <option selected>Выберите ответ</option>
+                <option value="1">А.Дюма</option>
+                <option value="2">И.С.Тургенев</option>
+                <option value="3">М.А.Булгаков</option>
+                <option value="4">М.Ю.Лермонтов</option>
+                <option value="5">А.С.Пушкин</option>
+                <option value="6">Л.Н.Толстой</option>
+                <option value="7">Н.В.Гоголь</option>
+              </select>
+            </div>
+            <div class="col-auto">
+              <button class="btn btn-outline" id="btnQ1" type="button"></button>
+            </div>
+          </form>
+        </div>
 
-			<div class="center m-4">
-				<form class="row g-3">
-					<div class="col-auto col-quest2">
-						<div class="question-label2 text-end rounded">Война и мир</div>
-					</div>
-					<div class="col-auto">
-						<select class="form-select bg-primary text-white" aria-label="Default select example" id="answer2">
-							<option selected>Выберите ответ</option>
-							<option value="1">А.Дюма</option>
-							<option value="2">И.С.Тургенев</option>
-							<option value="3">М.А.Булгаков</option>
-							<option value="4">М.Ю.Лермонтов</option>
-							<option value="5">А.С.Пушкин</option>
-							<option value="6">Л.Н.Толстой</option>
-							<option value="7">Н.В.Гоголь</option>
-						</select>
-					</div>
-					<div class="col-auto">
-						<button class="btn btn-outline" id="btnQ2" type="button"></button>
-					</div>
-				</form>
-			</div>
+        <div class="center m-4">
+          <form class="row g-3">
+            <div class="col-auto col-quest2">
+              <div class="question-label2 text-end rounded">Война и мир</div>
+            </div>
+            <div class="col-auto">
+              <select
+                class="form-select bg-primary text-white"
+                aria-label="Default select example"
+                id="answer2"
+              >
+                <option selected>Выберите ответ</option>
+                <option value="1">А.Дюма</option>
+                <option value="2">И.С.Тургенев</option>
+                <option value="3">М.А.Булгаков</option>
+                <option value="4">М.Ю.Лермонтов</option>
+                <option value="5">А.С.Пушкин</option>
+                <option value="6">Л.Н.Толстой</option>
+                <option value="7">Н.В.Гоголь</option>
+              </select>
+            </div>
+            <div class="col-auto">
+              <button class="btn btn-outline" id="btnQ2" type="button"></button>
+            </div>
+          </form>
+        </div>
 
-			<div class="center m-4">
-				<form class="row g-3">
-					<div class="col-auto col-quest2">
-						<div class="question-label2 text-end rounded">Отцы и дети</div>
-						<!-- <input type="text" readonly class="form-control-plaintext" id="questionVariant" value="email@example.com"> -->
-					</div>
-					<div class="col-auto">
-						<select class="form-select bg-primary text-white" aria-label="Default select example" id="answer3">
-							<option selected>Выберите ответ</option>
-							<option value="1">А.Дюма</option>
-							<option value="2">И.С.Тургенев</option>
-							<option value="3">М.А.Булгаков</option>
-							<option value="4">М.Ю.Лермонтов</option>
-							<option value="5">А.С.Пушкин</option>
-							<option value="6">Л.Н.Толстой</option>
-							<option value="7">Н.В.Гоголь</option>
-						</select>
-					</div>
-					<div class="col-auto">
-						<button class="btn btn-outline" id="btnQ3" type="button"></button>
-					</div>
-				</form>
-			</div>
+        <div class="center m-4">
+          <form class="row g-3">
+            <div class="col-auto col-quest2">
+              <div class="question-label2 text-end rounded">Отцы и дети</div>
+              <!-- <input type="text" readonly class="form-control-plaintext" id="questionVariant" value="email@example.com"> -->
+            </div>
+            <div class="col-auto">
+              <select
+                class="form-select bg-primary text-white"
+                aria-label="Default select example"
+                id="answer3"
+              >
+                <option selected>Выберите ответ</option>
+                <option value="1">А.Дюма</option>
+                <option value="2">И.С.Тургенев</option>
+                <option value="3">М.А.Булгаков</option>
+                <option value="4">М.Ю.Лермонтов</option>
+                <option value="5">А.С.Пушкин</option>
+                <option value="6">Л.Н.Толстой</option>
+                <option value="7">Н.В.Гоголь</option>
+              </select>
+            </div>
+            <div class="col-auto">
+              <button class="btn btn-outline" id="btnQ3" type="button"></button>
+            </div>
+          </form>
+        </div>
 
-			<div class="center m-4">
-				<form class="row g-3">
-					<div class="col-auto col-quest2">
-						<div class="question-label2 text-end rounded">Мертвые души</div>
-						<!-- <input type="text" readonly class="form-control-plaintext" id="questionVariant" value="email@example.com"> -->
-					</div>
-					<div class="col-auto">
-						<select class="form-select bg-primary text-white" aria-label="Default select example" id="answer4">
-							<option selected>Выберите ответ</option>
-							<option value="1">А.Дюма</option>
-							<option value="2">И.С.Тургенев</option>
-							<option value="3">М.А.Булгаков</option>
-							<option value="4">М.Ю.Лермонтов</option>
-							<option value="5">А.С.Пушкин</option>
-							<option value="6">Л.Н.Толстой</option>
-							<option value="7">Н.В.Гоголь</option>
-						</select>
-					</div>
-					<div class="col-auto">
-						<button class="btn btn-outline" id="btnQ4" type="button"></button>
-					</div>
-				</form>
-			</div>
+        <div class="center m-4">
+          <form class="row g-3">
+            <div class="col-auto col-quest2">
+              <div class="question-label2 text-end rounded">Мертвые души</div>
+              <!-- <input type="text" readonly class="form-control-plaintext" id="questionVariant" value="email@example.com"> -->
+            </div>
+            <div class="col-auto">
+              <select
+                class="form-select bg-primary text-white"
+                aria-label="Default select example"
+                id="answer4"
+              >
+                <option selected>Выберите ответ</option>
+                <option value="1">А.Дюма</option>
+                <option value="2">И.С.Тургенев</option>
+                <option value="3">М.А.Булгаков</option>
+                <option value="4">М.Ю.Лермонтов</option>
+                <option value="5">А.С.Пушкин</option>
+                <option value="6">Л.Н.Толстой</option>
+                <option value="7">Н.В.Гоголь</option>
+              </select>
+            </div>
+            <div class="col-auto">
+              <button class="btn btn-outline" id="btnQ4" type="button"></button>
+            </div>
+          </form>
+        </div>
 
-			<div class="center m-4">
-				<form class="row g-3">
-					<div class="col-auto col-quest2 text-end">
-						<div class="question-label2">Мастер и Маргарита</div>
-						<!-- <input type="text" readonly class="form-control-plaintext" id="questionVariant" value="email@example.com"> -->
-					</div>
-					<div class="col-auto">
-						<select class="form-select bg-primary text-white" aria-label="Default select example" id="answer5">
-							<option selected>Выберите ответ</option>
-							<option value="1">А.Дюма</option>
-							<option value="2">И.С.Тургенев</option>
-							<option value="3">М.А.Булгаков</option>
-							<option value="4">М.Ю.Лермонтов</option>
-							<option value="5">А.С.Пушкин</option>
-							<option value="6">Л.Н.Толстой</option>
-							<option value="7">Н.В.Гоголь</option>
-						</select>
-					</div>
-					<div class="col-auto">
-						<button class="btn btn-outline" id="btnQ5" type="button"></button>
-					</div>
-				</form>
-			</div>
+        <div class="center m-4">
+          <form class="row g-3">
+            <div class="col-auto col-quest2 text-end">
+              <div class="question-label2">Мастер и Маргарита</div>
+              <!-- <input type="text" readonly class="form-control-plaintext" id="questionVariant" value="email@example.com"> -->
+            </div>
+            <div class="col-auto">
+              <select
+                class="form-select bg-primary text-white"
+                aria-label="Default select example"
+                id="answer5"
+              >
+                <option selected>Выберите ответ</option>
+                <option value="1">А.Дюма</option>
+                <option value="2">И.С.Тургенев</option>
+                <option value="3">М.А.Булгаков</option>
+                <option value="4">М.Ю.Лермонтов</option>
+                <option value="5">А.С.Пушкин</option>
+                <option value="6">Л.Н.Толстой</option>
+                <option value="7">Н.В.Гоголь</option>
+              </select>
+            </div>
+            <div class="col-auto">
+              <button class="btn btn-outline" id="btnQ5" type="button"></button>
+            </div>
+          </form>
+        </div>
 
-			<div class="center m-4">
-				<form class="row g-3">
-					<div class="col-auto col-quest2">
-						<div class="question-label2 text-end rounded">Герой нашего времени</div>
-						<!-- <input type="text" readonly class="form-control-plaintext" id="questionVariant" value="email@example.com"> -->
-					</div>
-					<div class="col-auto">
-						<select class="form-select bg-primary text-white" aria-label="Default select example" id="answer6">
-							<option selected>Выберите ответ</option>
-							<option value="1">А.Дюма</option>
-							<option value="2">И.С.Тургенев</option>
-							<option value="3">М.А.Булгаков</option>
-							<option value="4">М.Ю.Лермонтов</option>
-							<option value="5">А.С.Пушкин</option>
-							<option value="6">Л.Н.Толстой</option>
-							<option value="7">Н.В.Гоголь</option>
-						</select>
-					</div>
-					<div class="col-auto">
-						<button class="btn btn-outline" id="btnQ6" type="button"></button>
-					</div>
-				</form>
-			</div>
+        <div class="center m-4">
+          <form class="row g-3">
+            <div class="col-auto col-quest2">
+              <div class="question-label2 text-end rounded">
+                Герой нашего времени
+              </div>
+              <!-- <input type="text" readonly class="form-control-plaintext" id="questionVariant" value="email@example.com"> -->
+            </div>
+            <div class="col-auto">
+              <select
+                class="form-select bg-primary text-white"
+                aria-label="Default select example"
+                id="answer6"
+              >
+                <option selected>Выберите ответ</option>
+                <option value="1">А.Дюма</option>
+                <option value="2">И.С.Тургенев</option>
+                <option value="3">М.А.Булгаков</option>
+                <option value="4">М.Ю.Лермонтов</option>
+                <option value="5">А.С.Пушкин</option>
+                <option value="6">Л.Н.Толстой</option>
+                <option value="7">Н.В.Гоголь</option>
+              </select>
+            </div>
+            <div class="col-auto">
+              <button class="btn btn-outline" id="btnQ6" type="button"></button>
+            </div>
+          </form>
+        </div>
 
-			<div class="center m-4">
-				<form class="row g-3">
-					<div class="col-auto col-quest2">
-						<div class="question-label2 text-end rounded">Три мушкетера</div>
-						<!-- <input type="text" readonly class="form-control-plaintext" id="questionVariant" value="email@example.com"> -->
-					</div>
-					<div class="col-auto">
-						<select class="form-select bg-primary text-white" aria-label="Default select example" id="answer7">
-							<option selected>Выберите ответ</option>
-							<option value="1">А.Дюма</option>
-							<option value="2">И.С.Тургенев</option>
-							<option value="3">М.А.Булгаков</option>
-							<option value="4">М.Ю.Лермонтов</option>
-							<option value="5">А.С.Пушкин</option>
-							<option value="6">Л.Н.Толстой</option>
-							<option value="7">Н.В.Гоголь</option>
-						</select>
-					</div>
-					<div class="col-auto">
-						<button class="btn btn-outline" id="btnQ7" type="button"></button>
-					</div>
-				</form>
-			</div>
-		</div>
+        <div class="center m-4">
+          <form class="row g-3">
+            <div class="col-auto col-quest2">
+              <div class="question-label2 text-end rounded">Три мушкетера</div>
+              <!-- <input type="text" readonly class="form-control-plaintext" id="questionVariant" value="email@example.com"> -->
+            </div>
+            <div class="col-auto">
+              <select
+                class="form-select bg-primary text-white"
+                aria-label="Default select example"
+                id="answer7"
+              >
+                <option selected>Выберите ответ</option>
+                <option value="1">А.Дюма</option>
+                <option value="2">И.С.Тургенев</option>
+                <option value="3">М.А.Булгаков</option>
+                <option value="4">М.Ю.Лермонтов</option>
+                <option value="5">А.С.Пушкин</option>
+                <option value="6">Л.Н.Толстой</option>
+                <option value="7">Н.В.Гоголь</option>
+              </select>
+            </div>
+            <div class="col-auto">
+              <button class="btn btn-outline" id="btnQ7" type="button"></button>
+            </div>
+          </form>
+        </div>
+      </div>
 
-		<div class="input center">
-			<!-- <input type="text" class="" placeholder="Ввод ответа" aria-label=""> -->
-			<button class="btn btn-info" type="button" id="btnCheckQ2">Проверить</button>
-		</div>
-	</main>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-		integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-		crossorigin="anonymous"></script>
-</body>
-
+      <div class="input center">
+        <!-- <input type="text" class="" placeholder="Ввод ответа" aria-label=""> -->
+        <button class="btn btn-info" type="button" id="btnCheckQ2">
+          Проверить
+        </button>
+      </div>
+    </main>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

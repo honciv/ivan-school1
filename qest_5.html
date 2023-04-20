@@ -1,139 +1,184 @@
 <!DOCTYPE html>
 <html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/index.css?v=3" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="icon"
+      href="assets/free-icon-golden-apple-1455014.png"
+      type="image/jpg"
+    />
+    <script src="./js/index5.js" defer></script>
+    <title>Задание 5</title>
+  </head>
 
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="./css/index.css">
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
-		integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-	<link rel="icon" href="assets/free-icon-golden-apple-1455014.png"
-		type="image/jpg">
-	<script src="./js/index5.js" defer></script>
-	<title>Задание 5</title>
-</head>
-
-<body class="parallax">
+  <body class="parallax">
     <header>
-        <nav class="navbar">
-            <div class="container">
-                <a href="index.html" class="navbar-brand">Войти</a>
-                <div class="navbar-wrap">
-                    <ul class="navbar-menu">
-                        <li><a href="second.html" class="callback">Литературное древо</a></li>
-                    </ul>
-                    <a href="second.html" class="callback">Следующее задание</a>
-					<div class="knop" id="timeSec"></div>
-                </div>
-            </div>
-        </nav>
+      <nav class="navbar">
+        <div class="container">
+          <a href="index.html" class="navbar-brand">Войти</a>
+          <div class="navbar-wrap">
+            <ul class="navbar-menu">
+              <li>
+                <a href="second.html" class="callback">Литературное древо</a>
+              </li>
+            </ul>
+            <a href="second.html" class="callback">Следующее задание</a>
+            <div class="knop" id="timeSec"></div>
+          </div>
+        </div>
+      </nav>
     </header>
-	<main>
-		<div class="card white_color">
-			<div class="card-body">
-				<h5 class="card-title tex">Задание 5</h5>
-				<p class="card-text tex">Заключительный этап нашего квеста: Участникам необходимо ответить на 5 вопросов по
-					произведениям сказочников.<br>
-					Максимальный балл – 5 xp. (1 xp – за один правильный ответ на заданный вопрос).
-				</p>
-			</div>
-		</div>
+    <main>
+      <div class="card white_color">
+        <div class="card-body">
+          <h5 class="card-title tex">Задание 5</h5>
+          <p class="card-text tex">
+            Заключительный этап нашего квеста: Участникам необходимо ответить на
+            5 вопросов по произведениям сказочников.<br />
+            Максимальный балл – 5 xp. (1 xp – за один правильный ответ на
+            заданный вопрос).
+          </p>
+        </div>
+      </div>
 
-		<div class="wrapper">
-			<div class="center m-5">
-				<form class="row g-3" onsubmit="checkForm();">
-					<div class="col-auto col-quest2">
-						<div class="question-label2 text-end rounded">Из чего у Золушки была карета?</div>
-					</div>
-					<div class="col-auto">
-						<div class="input center">
-							<input type="text" class="a_1" id="answer1" placeholder="Ввод ответа"
-								aria-label="Имя пользователя получателя with two button addons">
-						</div>
-					</div>
-					<div class="col-auto">
-						<button class="btn btn-outline" id="btnQ1" type="button"></button>
-					</div>
-				</form>
-			</div>
+      <div class="wrapper">
+        <div class="center m-5">
+          <form class="row g-3" onsubmit="checkForm();">
+            <div class="col-auto col-quest2">
+              <div class="question-label2 text-end rounded">
+                Из чего у Золушки была карета?
+              </div>
+            </div>
+            <div class="col-auto">
+              <div class="input center">
+                <input
+                  type="text"
+                  class="a_1"
+                  id="answer1"
+                  placeholder="Ввод ответа"
+                  aria-label="Имя пользователя получателя with two button addons"
+                />
+              </div>
+            </div>
+            <div class="col-auto">
+              <button class="btn btn-outline" id="btnQ1" type="button"></button>
+            </div>
+          </form>
+        </div>
 
-			<div class="center m-5">
-				<form class="row g-3" onsubmit="checkForm();">
-					<div class="col-auto col-quest2">
-						<div class="question-label2 text-end rounded">Что нужно было Страшиле<br>получить у Великого и Ужасного?
-						</div>
-					</div>
-					<div class="col-auto">
-						<div class="input center">
-							<input type="text" class="a_1" id="answer2" placeholder="Ввод ответа"
-								aria-label="Имя пользователя получателя with two button addons">
-						</div>
-					</div>
-					<div class="col-auto">
-						<button class="btn btn-outline" id="btnQ2" type="button"></button>
-					</div>
-				</form>
-			</div>
+        <div class="center m-5">
+          <form class="row g-3" onsubmit="checkForm();">
+            <div class="col-auto col-quest2">
+              <div class="question-label2 text-end rounded">
+                Что нужно было Страшиле<br />получить у Великого и Ужасного?
+              </div>
+            </div>
+            <div class="col-auto">
+              <div class="input center">
+                <input
+                  type="text"
+                  class="a_1"
+                  id="answer2"
+                  placeholder="Ввод ответа"
+                  aria-label="Имя пользователя получателя with two button addons"
+                />
+              </div>
+            </div>
+            <div class="col-auto">
+              <button class="btn btn-outline" id="btnQ2" type="button"></button>
+            </div>
+          </form>
+        </div>
 
-			<div class="center m-5">
-				<form class="row g-3" onsubmit="checkForm();">
-					<div class="col-auto col-quest2">
-						<div class="question-label2 text-end rounded">На чем ездил Емеля?</div>
-					</div>
-					<div class="col-auto">
-						<div class="input center">
-							<input type="text" class="a_1" id="answer3" placeholder="Ввод ответа"
-								aria-label="Имя пользователя получателя with two button addons">
-						</div>
-					</div>
-					<div class="col-auto">
-						<button class="btn btn-outline" id="btnQ3" type="button"></button>
-					</div>
-				</form>
-			</div>
+        <div class="center m-5">
+          <form class="row g-3" onsubmit="checkForm();">
+            <div class="col-auto col-quest2">
+              <div class="question-label2 text-end rounded">
+                На чем ездил Емеля?
+              </div>
+            </div>
+            <div class="col-auto">
+              <div class="input center">
+                <input
+                  type="text"
+                  class="a_1"
+                  id="answer3"
+                  placeholder="Ввод ответа"
+                  aria-label="Имя пользователя получателя with two button addons"
+                />
+              </div>
+            </div>
+            <div class="col-auto">
+              <button class="btn btn-outline" id="btnQ3" type="button"></button>
+            </div>
+          </form>
+        </div>
 
-			<div class="center m-5">
-				<form class="row g-3" onsubmit="checkForm();">
-					<div class="col-auto col-quest2">
-						<div class="question-label2 text-end rounded">Где жил Шерлок Холмс?</div>
-					</div>
-					<div class="col-auto">
-						<div class="input center">
-							<input type="text" class="a_1" id="answer4" placeholder="Ввод ответа"
-								aria-label="Имя пользователя получателя with two button addons">
-						</div>
-					</div>
-					<div class="col-auto">
-						<button class="btn btn-outline" id="btnQ4" type="button"></button>
-					</div>
-				</form>
-			</div>
+        <div class="center m-5">
+          <form class="row g-3" onsubmit="checkForm();">
+            <div class="col-auto col-quest2">
+              <div class="question-label2 text-end rounded">
+                Где жил Шерлок Холмс?
+              </div>
+            </div>
+            <div class="col-auto">
+              <div class="input center">
+                <input
+                  type="text"
+                  class="a_1"
+                  id="answer4"
+                  placeholder="Ввод ответа"
+                  aria-label="Имя пользователя получателя with two button addons"
+                />
+              </div>
+            </div>
+            <div class="col-auto">
+              <button class="btn btn-outline" id="btnQ4" type="button"></button>
+            </div>
+          </form>
+        </div>
 
-			<div class="center m-5">
-				<form class="row g-3" onsubmit="checkForm();">
-					<div class="col-auto col-quest2">
-						<div class="question-label2 text-end rounded">Как звали главного героя<br>в произведении <b>Капитанская
-								дочка</b>?</div>
-					</div>
-					<div class="col-auto">
-						<div class="input center">
-							<input type="text" class="a_1" id="answer5" placeholder="Ввод ответа"
-								aria-label="Имя пользователя получателя with two button addons">
-						</div>
-					</div>
-					<div class="col-auto">
-						<button class="btn btn-outline" id="btnQ5" type="button"></button>
-					</div>
-				</form>
-			</div>
-		</div>
+        <div class="center m-5">
+          <form class="row g-3" onsubmit="checkForm();">
+            <div class="col-auto col-quest2">
+              <div class="question-label2 text-end rounded">
+                Как звали главного героя<br />в произведении
+                <b>Капитанская дочка</b>?
+              </div>
+            </div>
+            <div class="col-auto">
+              <div class="input center">
+                <input
+                  type="text"
+                  class="a_1"
+                  id="answer5"
+                  placeholder="Ввод ответа"
+                  aria-label="Имя пользователя получателя with two button addons"
+                />
+              </div>
+            </div>
+            <div class="col-auto">
+              <button class="btn btn-outline" id="btnQ5" type="button"></button>
+            </div>
+          </form>
+        </div>
+      </div>
 
-		<div class="input center">
-			<!-- <input type="text" class="" placeholder="Ввод ответа" aria-label=""> -->
-			<button class="btn btn-info" type="button" id="btnCheckQ2">Проверить</button>
-		</div>
-	</main>
-</body>
-
+      <div class="input center">
+        <!-- <input type="text" class="" placeholder="Ввод ответа" aria-label=""> -->
+        <button class="btn btn-info" type="button" id="btnCheckQ2">
+          Проверить
+        </button>
+      </div>
+    </main>
+  </body>
 </html>
