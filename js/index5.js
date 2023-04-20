@@ -17,7 +17,6 @@ let btnQ5 = document.querySelector(`#btnQ5`);
 
 let timeSec = document.querySelector(`#timeSec`);
 
-let totalSum = document.querySelector(`#totalSum`);
 
 function printNumbers(from, to) {
   let current =  from
@@ -31,7 +30,6 @@ function printNumbers(from, to) {
     else{
       timeSec.innerHTML = "Осталось " + Math.floor(current/60) + 'мин';
     }
-    console.log(current);
     if (current > to) {
       setTimeout(go, 1000);
     }
@@ -40,10 +38,10 @@ function printNumbers(from, to) {
 }
 
 // использование:
-printNumbers(69, 1);
+printNumbers(540, 1);
 
 
-var question1 = localStorage.getItem("question5");
+var question5 = localStorage.getItem("question5");
 num = 0
 function checkQuestion5() {
 	if ((answer1.value.toLowerCase() == 'тыква') || (answer1.value.toLowerCase() == 'тыквы') || (answer1.value.toLowerCase() == 'из тыквы')) {
@@ -53,6 +51,7 @@ function checkQuestion5() {
 		btnQ1.innerHTML = 'Правильно'
         num++
         localStorage.setItem('question5', num);
+				questionSum();
 	}
 	else {
 		btnQ1.classList.remove(`btn-outline`)
@@ -68,6 +67,7 @@ function checkQuestion5() {
 		btnQ2.innerHTML = 'Правильно'
         num++
         localStorage.setItem('question5', num);
+				questionSum();
 	}
 	else {
 		btnQ2.classList.remove(`btn-outline`)
@@ -83,6 +83,7 @@ function checkQuestion5() {
 		btnQ3.innerHTML = 'Правильно'
         num++
         localStorage.setItem('question5', num);
+				questionSum();
 	}
 	else {
 		btnQ3.classList.remove(`btn-outline`)
@@ -98,6 +99,7 @@ function checkQuestion5() {
 		btnQ5.innerHTML = 'Правильно'
         num++
         localStorage.setItem('question5', num);
+				questionSum();
 	}
 	else {
 		btnQ5.classList.remove(`btn-outline`)

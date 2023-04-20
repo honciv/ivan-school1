@@ -20,7 +20,6 @@ let but4 = document.querySelector(`.but4`);
 
 let timeSec = document.querySelector(`#timeSec`);
 
-let totalSum = document.querySelector(`#totalSum`);
 
 function printNumbers(from, to) {
   let current =  from
@@ -34,7 +33,6 @@ function printNumbers(from, to) {
     else{
       timeSec.innerHTML = "Осталось " + Math.floor(current/60) + 'мин';
     }
-    console.log(current);
     if (current > to) {
       setTimeout(go, 1000);
     }
@@ -43,8 +41,8 @@ function printNumbers(from, to) {
 }
 
 // использование:
-printNumbers(69, 1);
-var question1 = localStorage.getItem("question4");
+printNumbers(540, 1);
+var question4 = localStorage.getItem("question4");
 num = 0
 
 function myClick() {
@@ -56,6 +54,7 @@ function myClick() {
         but.innerHTML = 'Правильно'
         num++
         localStorage.setItem('question4', num);
+        questionSum();
     }
     else {
         but.classList.remove(`btn-outline`)
@@ -73,6 +72,7 @@ function my1Click() {
         but1.innerHTML = 'Правильно'
         num++
         localStorage.setItem('question4', num);
+        questionSum();
     }
     else {
         but1.classList.remove(`btn-outline`)
@@ -90,6 +90,7 @@ function my2Click() {
         but2.innerHTML = 'Правильно'
         num++
         localStorage.setItem('question4', num);
+        questionSum();
     }
     else {
         but2.classList.remove(`btn-outline`)
@@ -107,6 +108,7 @@ function my4Click() {
         but4.innerHTML = 'Правильно'
         num++
         localStorage.setItem('question4', num);
+        questionSum();
     }
     else {
         but4.classList.remove(`btn-outline`)
