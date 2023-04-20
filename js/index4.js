@@ -18,6 +18,34 @@ let e = document.querySelector(`.a_5`);
 let ae = document.querySelector(`.button_4`);
 let but4 = document.querySelector(`.but4`);
 
+let timeSec = document.querySelector(`#timeSec`);
+
+let totalSum = document.querySelector(`#totalSum`);
+
+function printNumbers(from, to) {
+  let current =  from
+  setTimeout(function go() {
+    if (current == 1){
+      window.location.href = 'next.html';
+    }
+    if (current < 60){
+      timeSec.innerHTML = "Осталось " + current + 'сек';
+    }
+    else{
+      timeSec.innerHTML = "Осталось " + Math.floor(current/60) + 'мин';
+    }
+    console.log(current);
+    if (current > to) {
+      setTimeout(go, 1000);
+    }
+    current--;
+  }, 1000);
+}
+
+// использование:
+printNumbers(69, 1);
+var question1 = localStorage.getItem("question4");
+num = 0
 
 function myClick() {
     // console.log("myClick");
@@ -26,6 +54,8 @@ function myClick() {
         but.classList.remove(`btn-danger`)
         but.classList.add(`btn-success`)
         but.innerHTML = 'Правильно'
+        num++
+        localStorage.setItem('question4', num);
     }
     else {
         but.classList.remove(`btn-outline`)
@@ -41,6 +71,8 @@ function my1Click() {
         but1.classList.remove(`btn-danger`)
         but1.classList.add(`btn-success`)
         but1.innerHTML = 'Правильно'
+        num++
+        localStorage.setItem('question4', num);
     }
     else {
         but1.classList.remove(`btn-outline`)
@@ -56,27 +88,14 @@ function my2Click() {
         but2.classList.remove(`btn-danger`)
         but2.classList.add(`btn-success`)
         but2.innerHTML = 'Правильно'
+        num++
+        localStorage.setItem('question4', num);
     }
     else {
         but2.classList.remove(`btn-outline`)
         but2.classList.remove(`btn-success`)
         but2.classList.add(`btn-danger`)
         but2.innerHTML = 'Неправильно'
-    }
-}
-function my3Click() {
-    // console.log("my2Click");
-    if (d.value.toLowerCase() == `волшебник изумрудного города`) {
-        but3.classList.remove(`btn-outline`)
-        but3.classList.remove(`btn-danger`)
-        but3.classList.add(`btn-success`)
-        but3.innerHTML = 'Правильно'
-    }
-    else {
-        but3.classList.remove(`btn-outline`)
-        but3.classList.remove(`btn-success`)
-        but3.classList.add(`btn-danger`)
-        but3.innerHTML = 'Неправильно'
     }
 }
 function my4Click() {
@@ -86,6 +105,8 @@ function my4Click() {
         but4.classList.remove(`btn-danger`)
         but4.classList.add(`btn-success`)
         but4.innerHTML = 'Правильно'
+        num++
+        localStorage.setItem('question4', num);
     }
     else {
         but4.classList.remove(`btn-outline`)

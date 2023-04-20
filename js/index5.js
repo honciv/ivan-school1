@@ -15,12 +15,44 @@ let btnQ4 = document.querySelector(`#btnQ4`);
 let answer5 = document.querySelector(`#answer5`);
 let btnQ5 = document.querySelector(`#btnQ5`);
 
+let timeSec = document.querySelector(`#timeSec`);
+
+let totalSum = document.querySelector(`#totalSum`);
+
+function printNumbers(from, to) {
+  let current =  from
+  setTimeout(function go() {
+    if (current == 1){
+      window.location.href = 'next.html';
+    }
+    if (current < 60){
+      timeSec.innerHTML = "Осталось " + current + 'сек';
+    }
+    else{
+      timeSec.innerHTML = "Осталось " + Math.floor(current/60) + 'мин';
+    }
+    console.log(current);
+    if (current > to) {
+      setTimeout(go, 1000);
+    }
+    current--;
+  }, 1000);
+}
+
+// использование:
+printNumbers(69, 1);
+
+
+var question1 = localStorage.getItem("question5");
+num = 0
 function checkQuestion5() {
 	if ((answer1.value.toLowerCase() == 'тыква') || (answer1.value.toLowerCase() == 'тыквы') || (answer1.value.toLowerCase() == 'из тыквы')) {
 		btnQ1.classList.remove(`btn-outline`)
 		btnQ1.classList.remove(`btn-danger`)
 		btnQ1.classList.add(`btn-success`)
 		btnQ1.innerHTML = 'Правильно'
+        num++
+        localStorage.setItem('question5', num);
 	}
 	else {
 		btnQ1.classList.remove(`btn-outline`)
@@ -34,6 +66,8 @@ function checkQuestion5() {
 		btnQ2.classList.remove(`btn-danger`)
 		btnQ2.classList.add(`btn-success`)
 		btnQ2.innerHTML = 'Правильно'
+        num++
+        localStorage.setItem('question5', num);
 	}
 	else {
 		btnQ2.classList.remove(`btn-outline`)
@@ -47,6 +81,8 @@ function checkQuestion5() {
 		btnQ3.classList.remove(`btn-danger`)
 		btnQ3.classList.add(`btn-success`)
 		btnQ3.innerHTML = 'Правильно'
+        num++
+        localStorage.setItem('question5', num);
 	}
 	else {
 		btnQ3.classList.remove(`btn-outline`)
@@ -55,24 +91,13 @@ function checkQuestion5() {
 		btnQ3.innerHTML = 'Неправильно'
 	}
 
-	if ((answer4.value.toLowerCase() == 'бейкер-стрит 221-б') || (answer4.value.toLowerCase() == 'Бейкер-стрит 221-Б') || (answer4.value.toLowerCase() == 'Бейкер-Стрит 221-Б')) {
-		btnQ4.classList.remove(`btn-outline`)
-		btnQ4.classList.remove(`btn-danger`)
-		btnQ4.classList.add(`btn-success`)
-		btnQ4.innerHTML = 'Правильно'
-	}
-	else {
-		btnQ4.classList.remove(`btn-outline`)
-		btnQ4.classList.remove(`btn-success`)
-		btnQ4.classList.add(`btn-danger`)
-		btnQ4.innerHTML = 'Неправильно'
-	}
-
 	if ((answer5.value.toLowerCase() == 'петр гринев') || (answer5.value.toLowerCase() == 'петр')) {
 		btnQ5.classList.remove(`btn-outline`)
 		btnQ5.classList.remove(`btn-danger`)
 		btnQ5.classList.add(`btn-success`)
 		btnQ5.innerHTML = 'Правильно'
+        num++
+        localStorage.setItem('question5', num);
 	}
 	else {
 		btnQ5.classList.remove(`btn-outline`)

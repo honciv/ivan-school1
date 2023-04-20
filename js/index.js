@@ -11,50 +11,87 @@ let ac = document.querySelector(`.button_2`);
 let but2 = document.querySelector(`.but2`);
 
 
-function myClick(){
-    // console.log("myClick");
-    if (a.value == `Лермонтов`){
-        but.classList.remove(`btn-outline`)
-        but.classList.remove(`btn-danger`)
-        but.classList.add(`btn-success`)
-        but.innerHTML = 'Правильно'
+let timeSec = document.querySelector(`#timeSec`);
+
+let totalSum = document.querySelector(`#totalSum`);
+
+
+function printNumbers(from, to) {
+  let current =  from
+  setTimeout(function go() {
+    if (current == 1){
+      window.location.href = 'second.html';
+    }
+    if (current < 60){
+      timeSec.innerHTML = "Осталось " + current + 'сек';
     }
     else{
-        but.classList.remove(`btn-outline`)
-        but.classList.remove(`btn-success`)
-        but.classList.add(`btn-danger`)
-        but.innerHTML = 'Неправильно'
+      timeSec.innerHTML = "Осталось " + Math.floor(current/60) + 'мин';
     }
+    console.log(current);
+    if (current > to) {
+      setTimeout(go, 1000);
+    }
+    current--;
+  }, 1000);
 }
-function my1Click(){
-    if (b.value == `Грибоедов`){
-        // console.log("my1Click");
-        but1.classList.remove(`btn-outline`)
-        but1.classList.remove(`btn-danger`)
-        but1.classList.add(`btn-success`)
-        but1.innerHTML = 'Правильно'
-    }
-    else{
-        but1.classList.remove(`btn-outline`)
-        but1.classList.remove(`btn-success`)
-        but1.classList.add(`btn-danger`)
-        but1.innerHTML = 'Неправильно'
-    }
+
+// использование:
+printNumbers(69, 1);
+var question1 = localStorage.getItem("question1");
+
+num = 0
+
+function myClick() {
+  // console.log("myClick");
+  if (a.value == `Лермонтов`) {
+    but.classList.remove(`btn-outline`)
+    but.classList.remove(`btn-danger`)
+    but.classList.add(`btn-success`)
+    but.innerHTML = 'Правильно'
+    num++
+    localStorage.setItem('question1', num);
+  }
+  else {
+    but.classList.remove(`btn-outline`)
+    but.classList.remove(`btn-success`)
+    but.classList.add(`btn-danger`)
+    but.innerHTML = 'Неправильно'
+  }
 }
-function my2Click(){
-    // console.log("my2Click");
-    if (c.value == `Толстой`){
-        but2.classList.remove(`btn-outline`)
-        but2.classList.remove(`btn-danger`)
-        but2.classList.add(`btn-success`)
-        but2.innerHTML = 'Правильно'
-    }
-    else{
-        but2.classList.remove(`btn-outline`)
-        but2.classList.remove(`btn-success`)
-        but2.classList.add(`btn-danger`)
-        but2.innerHTML = 'Неправильно'
-    }
+function my1Click() {
+  if (b.value == `Грибоедов`) {
+    // console.log("my1Click");
+    but1.classList.remove(`btn-outline`)
+    but1.classList.remove(`btn-danger`)
+    but1.classList.add(`btn-success`)
+    but1.innerHTML = 'Правильно'
+    num++
+    localStorage.setItem('question1', num);
+  }
+  else {
+    but1.classList.remove(`btn-outline`)
+    but1.classList.remove(`btn-success`)
+    but1.classList.add(`btn-danger`)
+    but1.innerHTML = 'Неправильно'
+  }
+}
+function my2Click() {
+  // console.log("my2Click");
+  if (c.value == `Толстой`) {
+    but2.classList.remove(`btn-outline`)
+    but2.classList.remove(`btn-danger`)
+    but2.classList.add(`btn-success`)
+    but2.innerHTML = 'Правильно'
+    num++
+    localStorage.setItem('question1', num);
+  }
+  else {
+    but2.classList.remove(`btn-outline`)
+    but2.classList.remove(`btn-success`)
+    but2.classList.add(`btn-danger`)
+    but2.innerHTML = 'Неправильно'
+  }
 }
 as.addEventListener(`click`, myClick);
 ab.addEventListener(`click`, my1Click);

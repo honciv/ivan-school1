@@ -232,3 +232,74 @@ header {
     max-width: 152px;
   }
 }
+
+.mkl {
+  margin: 1% 20% 10% 15%;
+}
+
+.mkl2{
+  margin-right: 5%;
+}
+
+.max_v {
+  max-width: 110px;
+}
+
+.knop {
+  background-color: #000000;
+  width: 100px;
+  text-align: center;
+  border-radius: 40%;
+  color: rgb(217, 255, 2);
+}
+.helr{
+  border-radius: 50%;
+}
+.white_color{
+  max-width: 80%;
+  margin-left: 10%;
+}
+.ui{
+  color: #269926;
+}
+.maxim_width_img{
+  min-height: 100px;
+  min-width: 100px;
+  text-align: center;
+  text-decoration: none;
+  color: #000;
+}
+.poi{
+  margin-left: 300px;
+}
+.surcle{
+  background-color: rgb(228, 34, 0);
+  border-radius: 100%;
+}
+.mbwe{
+  margin-top: 4%;
+}
+.iopw{
+  max-width: 400px;
+  min-height: 150px;
+  margin-left: 37%;
+  color: gold;
+  text-align: center;
+  padding-top: 3%;
+}
+.trwa{
+  font-family: italic;
+}
+.surcle1{
+  border-radius: 5%;
+  background-color: rgb(6, 112, 23)
+}
+.clep{
+  min-height: 300px;
+  min-width: 300px;
+  text-align: center;
+  text-decoration: none;
+  color: #000;
+  background-color: #148514;
+  margin: 5px;
+}

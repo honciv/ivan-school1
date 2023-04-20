@@ -23,6 +23,33 @@ let btnQ7 = document.querySelector(`#btnQ7`);
 // let as = document.querySelector(`.button`);
 // let but = document.querySelector(`.but`);
 
+let timeSec = document.querySelector(`#timeSec`);
+
+let totalSum = document.querySelector(`#totalSum`);
+
+function printNumbers(from, to) {
+  let current =  from
+  setTimeout(function go() {
+    if (current == 1){
+      window.location.href = 'next.html';
+    }
+    if (current < 60){
+      timeSec.innerHTML = "Осталось " + current + 'сек';
+    }
+    else{
+      timeSec.innerHTML = "Осталось " + Math.floor(current/60) + 'мин';
+    }
+    console.log(current);
+    if (current > to) {
+      setTimeout(go, 1000);
+    }
+    current--;
+  }, 1000);
+}
+
+// использование:
+printNumbers(69, 1);
+
 // let b = document.querySelector(`.a_2`);
 // let ab = document.querySelector(`.button_1`);
 // let but1 = document.querySelector(`.but1`);
@@ -32,12 +59,18 @@ let btnQ7 = document.querySelector(`#btnQ7`);
 // let but2 = document.querySelector(`.but2`);
 
 
+var question1 = localStorage.getItem("question2");
+num = 0
+
+
 function checkQuestion2() {
   if (answer1.value == '5') {
     btnQ1.classList.remove(`btn-outline`)
     btnQ1.classList.remove(`btn-danger`)
     btnQ1.classList.add(`btn-success`)
     btnQ1.innerHTML = 'Правильно'
+    num++
+    localStorage.setItem('question2', num);
   }
   else {
     btnQ1.classList.remove(`btn-outline`)
@@ -51,6 +84,8 @@ function checkQuestion2() {
     btnQ2.classList.remove(`btn-danger`)
     btnQ2.classList.add(`btn-success`)
     btnQ2.innerHTML = 'Правильно'
+    num++
+    localStorage.setItem('question2', num);
   }
   else {
     btnQ2.classList.remove(`btn-outline`)
@@ -64,6 +99,8 @@ function checkQuestion2() {
     btnQ3.classList.remove(`btn-danger`)
     btnQ3.classList.add(`btn-success`)
     btnQ3.innerHTML = 'Правильно'
+    num++
+    localStorage.setItem('question2', num);
   }
   else {
     btnQ3.classList.remove(`btn-outline`)
@@ -77,6 +114,8 @@ function checkQuestion2() {
     btnQ4.classList.remove(`btn-danger`)
     btnQ4.classList.add(`btn-success`)
     btnQ4.innerHTML = 'Правильно'
+    num++
+    localStorage.setItem('question2', num);
   }
   else {
     btnQ4.classList.remove(`btn-outline`)
@@ -90,6 +129,8 @@ function checkQuestion2() {
     btnQ5.classList.remove(`btn-danger`)
     btnQ5.classList.add(`btn-success`)
     btnQ5.innerHTML = 'Правильно'
+    num++
+    localStorage.setItem('question2', num);
   }
   else {
     btnQ5.classList.remove(`btn-outline`)
@@ -103,6 +144,8 @@ function checkQuestion2() {
     btnQ6.classList.remove(`btn-danger`)
     btnQ6.classList.add(`btn-success`)
     btnQ6.innerHTML = 'Правильно'
+    num++
+    localStorage.setItem('question2', num);
   }
   else {
     btnQ6.classList.remove(`btn-outline`)
@@ -116,6 +159,8 @@ function checkQuestion2() {
     btnQ7.classList.remove(`btn-danger`)
     btnQ7.classList.add(`btn-success`)
     btnQ7.innerHTML = 'Правильно'
+    num++
+    localStorage.setItem('question2', num);
   }
   else {
     btnQ7.classList.remove(`btn-outline`)
