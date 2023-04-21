@@ -324,3 +324,6 @@ main {
 .canvasOff {
   display: none;
 }
+.max_asd{
+  max-width: 30px;
+}
